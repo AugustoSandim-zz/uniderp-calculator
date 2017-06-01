@@ -1,0 +1,21 @@
+.keyboard {
+  background-color: #6391FE;
+  display: grid;
+  height: 70vh;
+  padding-top: 40px;
+  width: 100%;
+}
+
+.keyboard .row {
+  height: 33%;
+}
+
+.keyboard .box {
+  background-color: transparent;
+  border: none;
+}
+
+.keyboard .box button {
+  color: white;
+  font-size: 2em;
+}
