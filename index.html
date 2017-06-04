@@ -20,50 +20,46 @@
   <!--<meta name='msapplication-TileImage' content='/assets/images/ic?logo_144.png'>-->
   <meta name='msapplication-TileColor' content='#078BCC'>
   <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/reset.css" />
   <link rel="stylesheet" href="assets/css/flexboxgrid.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header>
-    <hgroup>
-      <h1>Header</h1>
-      <h2>Subheader</h2>
-    </hgroup>
-  </header>
   <nav>
     <ul>
       <li><a href="#">Menu Option 1</a></li>
       <li><a href="#">Menu Option 2</a></li>
     </ul>
   </nav>
+  <header id="result-final">
+    <h1>Header</h1>
+  </header>
+  
   <section>
-    <article>
-      <header>
-        <h1>Article #1</h1>
-      </header>
-      <section>
-        This is the first article.
-      </section>
-    </article>
+
+    <div id="digited-number">
+      <h1></h1>
+    </div>
+    
   </section>
   <section class="keyboard">
     
     <div class="row around-xs">
       <div class="col-xs-2">
         <div class="box">
-            <button>1</button>
+            <button class="button-number" value="7">7</button>
         </div>
       </div>
       
       <div class="col-xs-2">
         <div class="box">
-            <button>2</button>  
+            <button class="button-number" value="8">8</button>  
         </div>
       </div>
       <div class="col-xs-2">
         <div class="box">
-            <button>3</button>  
+            <button class="button-number" value="9">9</button>  
         </div>
       </div>
     </div>
@@ -71,18 +67,18 @@
     <div class="row around-xs">
       <div class="col-xs-2">
         <div class="box">
-            <button>4</button>
+            <button class="button-number" value="4">4</button>
         </div>
       </div>
       
       <div class="col-xs-2">
         <div class="box">
-            <button>5</button>  
+            <button class="button-number" value="5">5</button>  
         </div>
       </div>
       <div class="col-xs-2">
         <div class="box">
-            <button>6</button>  
+            <button class="button-number" value="6">6</button>  
         </div>
       </div>
     </div>
@@ -90,31 +86,46 @@
     <div class="row around-xs">
       <div class="col-xs-2">
         <div class="box">
-            <button>7</button>
+            <button class="button-number" value="1">1</button>
         </div>
       </div>
       
       <div class="col-xs-2">
         <div class="box">
-            <button>8</button>  
+            <button class="button-number" value="2">2</button>  
         </div>
       </div>
       <div class="col-xs-2">
         <div class="box">
-            <button>9</button>  
+            <button class="button-number" value="3">3</button>  
         </div>
       </div>
     </div>
-    
     <div class="row around-xs">
       <div class="col-xs-2">
         <div class="box">
-            <button>0</button>
+            <button class="button-number" value=".">.</button>
+        </div>
+      </div>
+
+      <div class="col-xs-2">
+        <div class="box">
+            <button class="button-number" value="0">0</button>
+        </div>
+      </div>
+
+      <div class="col-xs-2">
+        <div class="box">
+            <button class="button-backspace">
+              <img src="assets/images/ic_backspace_white_24px.svg" alt="Apagar">
+            </button>
         </div>
       </div>
     </div>
 
   </section>
+
+  <script src="assets/js/application.js"></script>
  
 </body>
 </html>
