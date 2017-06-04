@@ -1,13 +1,83 @@
-body {
+body, h1 {
   font-family: 'Montserrat', sans-serif;
 }
 
 .keyboard {
-  background-color: #6391FE;
+  background-color: black;
   display: grid;
-  height: 70vh;
+  height: 54vh;
   padding-top: 40px;
   width: 100%;
+
+  /* background: -webkit-linear-gradient(left, #282d33 , #3A434F); /* For Safari 5.1 to 6.0 */
+  /* background: -o-linear-gradient(right, #282d33, #3A434F); /* For Opera 11.1 to 12.0 */
+  /* background: -moz-linear-gradient(right, #282d33, #3A434F); /* For Firefox 3.6 to 15 */
+  /* background: linear-gradient(to right, #282d33 , #3A434F); /* Standard syntax (must be last) */
+}
+
+#result-final {
+  height: 33vh;
+  background-color: black;
+  background-image: /* background: -webkit-linear-gradient(left, #6E66F1, rgb(159, 154, 251)); */;
+  background-image: /* background: -moz-linear-gradient(left, #6E66F1, rgb(159, 154, 251)); */;
+  background-image: /* background: -o-linear-gradient(left, #6E66F1, rgb(159, 154, 251)); */;
+  background-image: /* background: linear-gradient(to right, #6E66F1, rgb(159, 154, 251)); */;
+  vertical-align: middle;
+}
+
+.line-behind {
+  display: table;
+  white-space: nowrap;
+}
+
+.line-behind:before, 
+.line-behind:after {
+  border-top: 1px solid green;
+  content: '';
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 45%;
+}
+
+.line-behind:before { right: 1.5%; }
+.line-behind:after { left: 1.5%; }
+
+#result-final h1 {
+  margin: 0;
+  color: #81D8C3;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 80px;
+  font-size: 2em;
+}
+
+.digited-number {
+  height: 13vh;
+  background-color: #222220;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.3);
+  position: relative;
+
+}
+
+.digited-number div {
+  line-height: 75px;
+}
+
+.digited-number div h1 {
+  margin: 0;
+  color: white;
+  padding-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+.digited-number div .clear-all {
+  display: none;
+  position: absolute;
+  right: 20px;
+  margin-top: -50px;
 }
 
 .keyboard .row {
@@ -23,4 +93,6 @@ body {
   color: white;
   font-size: 2em;
   font-weight: 200;
+  background: transparent !important;
+  border: none !important;
 }
